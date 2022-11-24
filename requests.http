@@ -1,0 +1,96 @@
+﻿// --- ITEMS SERVICE
+### Get All Items
+GET https://localhost:5000/api/item
+
+### Create Item 1
+POST https://localhost:5000/api/item
+Content-Type: application/json
+
+< ./data/item_1.json
+
+### Update Item 1 to Version 2
+PUT https://localhost:5000/api/item/1
+Content-Type: application/json
+
+< ./data/item_1_v2.json
+
+### Get Item 1
+GET https://localhost:5000/api/item/1
+
+### Delete item 1
+DELETE https://localhost:5000/api/item/1
+
+// -------------------------------------------------------------------
+
+
+// --- WAREHOUSE SERVICE
+
+// ------ LOCATIONS
+### Get all locations
+GET https://localhost:5000/api/warehouse/location
+
+### Create Location 1
+POST https://localhost:5000/api/warehouse/location
+Content-Type: application/json
+
+< ./data/location_1.json
+
+### Update Location to Version 2
+PUT https://localhost:5000/api/warehouse/location/1
+Content-Type: application/json
+
+< ./data/location_1_v2.json
+
+### Get Location 1
+GET https://localhost:5000/api/warehouse/location/1
+
+### Delete Location 1
+DELETE https://localhost:5000/api/warehouse/location/1
+
+// ---------
+
+// ------ STOCKED ITEMS
+### Get all stocked items
+GET https://localhost:5000/api/warehouse/item
+
+### Stock Item 1
+POST https://localhost:5000/api/warehouse/item
+Content-Type: application/json
+
+< ./data/stockeditem_1.json
+
+### Update Item 1 Quantity
+PUT https://localhost:5000/api/warehouse/item/1
+Content-Type: application/json
+
+< ./data/stockeditem_1_v2.json
+
+### Get Stocked Item 1
+GET https://localhost:5000/api/warehouse/item/1
+
+### Delete Stocked Item 1
+DELETE https://localhost:5000/api/warehouse/item/1
+
+// ------ WAREHOUSE
+### Get all Warehouse
+GET https://localhost:5000/api/warehouse
+
+### Create Warehouse 1
+POST https://localhost:5000/api/warehouse
+Content-Type: application/json
+
+< ./data/stockeditem_1.json
+
+### Update Warehouse to Version 2
+PUT https://localhost:5000/api/warehouse/1
+Content-Type: application/json
+
+< ./data/stockeditem_1_v2.json
+
+### Get Warehouse 1
+GET https://localhost:5000/api/warehouse/1
+
+### Delete Warehouse 1
+DELETE https://localhost:5000/api/warehouse/1
+
+// -------------------------------------------------------------------

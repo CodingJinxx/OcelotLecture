@@ -21,6 +21,6 @@ if (app.Environment.IsDevelopment())
 
 // Warehouse CRUD
 
-app.MapCRUD<Facility>("items");
+app.MapCRUD<CataloguedItem>("items");
 
 app.Run();

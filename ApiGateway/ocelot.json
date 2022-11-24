@@ -1,0 +1,107 @@
+﻿{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/item",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamScheme" : "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8000
+        }
+      ],
+      "DownstreamPathTemplate": "/items"
+    },
+    {
+      "UpstreamPathTemplate": "/api/item/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
+      "DownstreamScheme" : "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8000
+        }
+      ],
+      "DownstreamPathTemplate": "/items/{id}"
+    },
+
+    {
+      "UpstreamPathTemplate": "/api/warehouse/location",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamScheme" : "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9000
+        }
+      ],
+      "DownstreamPathTemplate": "/locations"
+    },
+    {
+      "UpstreamPathTemplate": "/api/warehouse/location/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
+      "DownstreamScheme" : "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9000
+        }
+      ],
+      "DownstreamPathTemplate": "/locations/{id}"
+    },
+
+
+    {
+      "UpstreamPathTemplate": "/api/warehouse/item",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamScheme" : "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9000
+        }
+      ],
+      "DownstreamPathTemplate": "/stockeditems"
+    },
+    {
+      "UpstreamPathTemplate": "/api/warehouse/item/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
+      "DownstreamScheme" : "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9000
+        }
+      ],
+      "DownstreamPathTemplate": "/stockeditems/{id}"
+    },
+
+    {
+      "UpstreamPathTemplate": "/api/warehouse",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamScheme" : "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9000
+        }
+      ],
+      "DownstreamPathTemplate": "/facilities"
+    },
+    {
+      "UpstreamPathTemplate": "/api/warehouse/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ],
+      "DownstreamScheme" : "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 9000
+        }
+      ],
+      "DownstreamPathTemplate": "/facilities/{id}"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5000"
+  }
+}
